@@ -4,3 +4,14 @@ python3 manage.py runserver $IP:$C9_PORT
 python3 manage.py runserver
 
 django-admin startapp todo
+
+sqlite3 db.sqlite3
+.tables
+select * from django_migrations;
+.quit
+
+python manage.py migrate
+sqlite3 db.sqlite3
+.headers on
+.mode colum
+select * from django_migrations;
