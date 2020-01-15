@@ -1,0 +1,6 @@
+pip3 install django==1.11.24
+django-admin startproject django_todo .
+python3 manage.py runserver $IP:$C9_PORT
+python3 manage.py runserver
+
+django-admin startapp todo
