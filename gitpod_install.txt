@@ -1,0 +1,6 @@
+pip3 install django==1.11.24
+pip3 install gunicorn
+pip3 install psycopg2~=2.7.3.1
+pip3 install --upgrade pip
+heroku login
+pip3 install dj_database_url
