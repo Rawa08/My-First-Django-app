@@ -1,0 +1,9 @@
+pip3 install gunicorn
+pip3 install psycopg2~=2.7.3.1
+pip3 freeze --local > requirements.txt
+heroku create simple-django--todo-rawa --region eu
+git remote -v
+heroku help
+heroku addons:create heroku-postgresql:hobby-dev
+
+pip3 install dj_database_url
