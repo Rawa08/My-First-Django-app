@@ -13,3 +13,4 @@ git push heroku master
 echo web: gunicorn django_todo.wsgi:application > Procfile
 
 git push heroku master && git push
+heroku git:remote -a simple-django--todo-rawa
