@@ -1,4 +1,6 @@
+pip3 install --upgrade pip
 pip3 install django==1.11.24
+pip3 install coverage
 django-admin startproject django_todo .
 python3 manage.py runserver $IP:$C9_PORT
 python3 manage.py runserver
@@ -15,3 +17,10 @@ sqlite3 db.sqlite3
 .headers on
 .mode colum
 select * from django_migrations;
+
+The python3 manage.py test command   checks all of the apps for filenames that begin with the word test and runs all of the methods in that file that begin with test_
+
+coverage run manage.py test
+coverage report
+
+coverage run --source=todo manage.py test
