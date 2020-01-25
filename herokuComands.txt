@@ -11,3 +11,5 @@ heroku config
 heroku config:set DISABLE_COLLECTSTATIC=1
 git push heroku master
 echo web: gunicorn django_todo.wsgi:application > Procfile
+
+git push heroku master && git push
